@@ -1,0 +1,839 @@
+
+%
+%
+% Magic fields:
+%
+%     www_tags -- used to control which page groups the paper appears in.
+%        This is a space-separated list.
+%     www_section -- the topic used under 'topics.html'
+%     www_{ps|pdf|ps_gz|txt|html|abstract}_url -- link for text/abstract of
+%          an entry.
+%     www_important -- set for important entries
+%     www_remarks -- annotation for an entry
+@Article{         dennis:multiprogram,
+ author         = {Dennis, Jack B. and Van Horn, Earl C.},
+ title          = {Programming Semantics for Multiprogrammed Computations},
+ year           = {1966},
+ publisher      = {Association for Computing Machinery},
+ address        = {New York, NY, USA},
+ volume         = {9},
+ number         = {3},
+ issn           = {0001-0782},
+ doi            = {10.1145/365230.365252},
+ journal        = {Commun. ACM},
+ month          = { March },
+ pages          = {143--155},
+ www_section    = { Theory },
+}
+
+@InProceedings{   lampson71,
+ author         = {B.W. Lampson},
+ title          = {Protection},
+ booktitle      = {Proceedings of the Fifth Princeton Symposium on Info. Sci.
+                  and Systems},
+ month          = {March},
+ year           = {1971},
+ note           = {Reprinted in ACM Operating Systems Review, Vol. 8 (1),
+                  January 1974},
+ www_section    = { Theory },
+}
+
+@PhDThesis{       jones:protection,
+ type           = {{PhD}},
+ title          = {Protection in {Programmed} {Systems}},
+ abstract       = {This dissertation investigates the control of access to
+                  objects within programmed systems. The vehicle for this
+                  study is a model of protection that isolates a small set of
+                  mechanisms needed to provide access centre!, leaving the
+                  policy for invoking these mechanisms to vary naturally with
+                  applications. Emphasis is placed on access control required
+                  for parameters that accompany a process crossing between
+                  execution environments; and a new concept called
+                  amplification is defined.
+                  
+                  The model is shown to provide structure and terminology
+                  sufficient for describing and comparing diverse protection
+                  systems, for expressing and proving boundary conditions
+                  that characterize the manipulation of objects within
+                  environments independent of the code executed, and for
+                  partially ordering protection systems according to the
+                  services they provide. In addition, the dissertation
+                  introduces the concept of a centralized protection facility
+                  capable of providing access control for user defined
+                  objects and accesses},
+ language       = {en},
+ school         = {Carnegie Mellon University},
+ author         = {Jones, Anita Katherine},
+ month          = {June},
+ year           = {1973},
+ www_section    = { Theory },
+ www_tags       = { selected },
+}
+
+@InProceedings{   fabry:caseforcapabilities,
+ author         = {Fabry, R. S.},
+ title          = {The case for capability based computers (Extended
+                  Abstract)},
+ booktitle      = {Proceedings of the Fourth ACM Symposium on Operating
+                  System Principles 1973},
+ year           = {1973},
+ doi            = {10.1145/800009.808060},
+ publisher      = {ACM},
+ address        = {New York, NY, USA},
+ www_section    = { Hardware },
+}
+
+@Article{         lampson73,
+ key            = {Lampson},
+ author         = {B.W. Lampson},
+ title          = {A Note on the Confinement Problem},
+ journal        = {Communications of the ACM},
+ volume         = {16},
+ number         = {10},
+ month          = {October},
+ year           = {1973},
+ pages          = {613--615},
+ www_section    = { Theory },
+}
+
+@PhDThesis{       redell:naming,
+ title          = {Naming and {Protection} in {Extendible} {Operating}
+                  {Systems}},
+ abstract       = {The properties of capability-based extendible operating
+                  systems are described, and various aspects of such systems
+                  are discussed, with emphasis on the conflict between free
+                  distribution of access privileges and later revocation of
+                  those privileges. The discussion culminates in a set of
+                  goals for a new capability scheme. A new {\textless}Jc.sign
+                  is then proposed, which provides both type extension and
+                  revocation through the definition of generalized sealing of
+                  capabilities. The implementation of this design is
+                  discussed in sufficient detail to demonstrate that it would
+                  be workable and acceptably economical. The utility of the
+                  proposed capability mechanism is demonstrated by describing
+                  two facilities implementable in terms of it. These are: (a)
+                  revocable parameters for calls between mutually suspicious
+                  subsystems, and (b) directories providing a civilized
+                  medium for the storage and distribution of revocable
+                  capabilities},
+ language       = {en},
+ author         = {Redell, David D},
+ year           = {1974},
+ school         = {Massachusetts Institute of Technology},
+ www_section    = { Theory },
+ www_tags       = { selected },
+}
+
+@Article{         wulf:hydra,
+ author         = {Wulf, W. and Cohen, E. and Corwin, W. and Jones, A. and
+                  Levin, R. and Pierson, C. and Pollack, F.},
+ title          = {{HYDRA: the kernel of a multiprocessor operating system}},
+ journal        = {Communications of the ACM},
+ volume         = {17},
+ number         = {6},
+ year           = {1974},
+ issn           = {0001-0782},
+ pages          = {337--345},
+ doi            = {10.1145/355616.364017},
+ publisher      = {ACM},
+ address        = {New York, NY, USA},
+ www_section    = { Operating Systems / HYDRA },
+}
+
+@InProceedings{   jones74,
+ key            = {Jones},
+ author         = {A.K. Jones and W.A. Wulf},
+ title          = {Towards the Design of Secure Systems},
+ booktitle      = {Proceedings of the International Workshop on Protection in
+                  Operating Systems},
+ organization   = {Institut de Recherche d'Informatique},
+ address        = {Rocquencourt, Le Chesnay, France},
+ year           = {1974},
+ pages          = {121--135},
+ month          = {August},
+ www_section    = { Theory },
+}
+
+@Article{         saltzer:protection,
+ title          = {The protection of information in computer systems},
+ volume         = {63},
+ issn           = {0018-9219},
+ doi            = {10.1109/PROC.1975.9939},
+ abstract       = {This tutorial paper explores the mechanics of protecting
+                  computer-stored information from unauthorized use or
+                  modification. It concentrates on those architectural
+                  structures--whether hardware or software--that are
+                  necessary to support information protection. The paper
+                  develops in three main sections. Section I describes
+                  desired functions, design principles, and examples of
+                  elementary protection and authentication mechanisms. Any
+                  reader familiar with computers should find the first
+                  section to be reasonably accessible. Section II requires
+                  some familiarity with descriptor-based computer
+                  architecture. It examines in depth the principles of modern
+                  protection architectures and the relation between
+                  capability systems and access control list systems, and
+                  ends with a brief analysis of protected subsystems and
+                  protected objects. The reader who is dismayed by either the
+                  prerequisites or the level of detail in the second section
+                  may wish to skip to Section III, which reviews the state of
+                  the art and current research projects and provides
+                  suggestions for further reading},
+ language       = {en},
+ number         = {9},
+ journal        = {Proceedings of the IEEE},
+ author         = {Saltzer, J.H. and Schroeder, M.D.},
+ year           = {1975},
+ pages          = {1278--1308},
+ www_section    = { Theory },
+}
+
+@InProceedings{   cohen:hydraprotect,
+ author         = {E. Cohen and D. Jefferson},
+ title          = {Protection of the {Hydra} Operating System},
+ booktitle      = {Proceedings of the Fifth ACM Symposium on Operating
+                  Systems Principles},
+ year           = {1975},
+ pages          = {141--160},
+ www_section    = { Operating Systems / HYDRA },
+}
+
+@TechReport{      neumann:psos75,
+ author         = {P.G. Neumann and L. Robinson and K.N. Levitt and R.S.
+                  Boyer and A.R. Saxena},
+ title          = {A Provably Secure Operating System},
+ institution    = {Computer Science Laboratory SRI International, Menlo Park,
+                  California},
+ year           = {1975},
+ month          = {June},
+ www_section    = { Operating Systems / PSOS },
+}
+
+@TechReport{      bell:seccompsys,
+ author         = {D.E. Bell and L.J. La Padula},
+ title          = {Secure Computer System: Unified Exposition and {Multics}
+                  Interpretation},
+ number         = {ESD-TR-75-306},
+ institution    = {The Mitre Corporation},
+ address        = {Bedford, Massachusetts},
+ month          = {March},
+ year           = {1976},
+ www_section    = { Theory },
+}
+
+@TechReport{      neumann:psos77,
+ author         = {P.G. Neumann and R.S. Boyer and R.J. Feiertag and K.N.
+                  Levitt and L. Robinson},
+ title          = {A Provably Secure Operating System: The System, Its
+                  Applications, and Proofs},
+ institution    = {Computer Science Laboratory SRI International, Menlo Park,
+                  California},
+ year           = {1977},
+ month          = {February},
+ www_section    = { Operating Systems / PSOS },
+}
+
+@Book{            denning:cap,
+ series         = {Operating and {Programming} {Systems} {Series}},
+ title          = {The {Cambridge} {CAP} {Computer} and {Its} {Operating}
+                  {System}},
+ isbn           = {0-444-00357-6},
+ number         = {6},
+ publisher      = {Elsevier North Holland},
+ author         = {Wilkes, Maurice Vincent and Needham, Roger Michael and
+                  Denning, Peter J.},
+ editor         = {Peter J. Denning},
+ year           = {1979},
+ www_section    = { Hardware / CAP, Operating Systems },
+ www_pdf_url    = {
+                  https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cap.pdf
+                  },
+ www_tags       = { selected },
+}
+
+@InProceedings{   neumann:psos79,
+ key            = {Feiertag},
+ author         = {R. J. Feiertag and P. G. Neumann},
+ title          = {The Foundations of a {Provably Secure Operating System}
+                  ({PSOS})},
+ publisher      = {AFIPS Press},
+ booktitle      = {Proceedings of the National Computer Conference},
+ year           = {1979},
+ pages          = {329--334},
+ www_pdf_url    = {http://www.csl.sri.com/neumann/psos.pdf},
+ www_section    = { Operating Systems / PSOS },
+ www_tags       = { selected },
+}
+
+@TechReport{      neumann:psos80,
+ author         = {P. G. Neumann and R.S. Boyer and R.J. Feiertag and K.N.
+                  Levitt and L. Robinson},
+ title          = {{A Provably Secure Operating System}: The System, Its
+                  Applications, and Proofs},
+ institution    = {Computer Science Laboratory, SRI International, Menlo
+                  Park, California},
+ year           = {1980},
+ month          = {May},
+ note           = {2nd edition, Report CSL-116},
+ www_section    = { Operating Systems / PSOS },
+}
+
+@Book{            wulf:hydrabook,
+ title          = {{HYDRA/C.mmp} An Experimental Computer System},
+ author         = {William A. Wulf and Roy Levin and Samuel P. Harbinson},
+ isbn           = {978-0070721203},
+ year           = {1981},
+ publisher      = {McGraw-Hill},
+ www_section    = { Operating Systems / HYDRA },
+ www_tags       = { selected },
+}
+
+@Article{         mayer:b5000later,
+ author         = {Mayer, Alastair J. W.},
+ title          = {The Architecture of the Burroughs {B5000}: 20 Years Later
+                  and Still Ahead of the Times?},
+ journal        = {SIGARCH Comput. Archit. News},
+ volume         = {10},
+ number         = {4},
+ month          = {June},
+ year           = {1982},
+ issn           = {0163-5964},
+ pages          = {3--10},
+ doi            = {10.1145/641542.641543},
+ publisher      = {ACM},
+ address        = {New York, NY, USA},
+ www_section    = { Hardware },
+}
+
+@InProceedings{   boebert:inability,
+ title          = {On the inability of an unmodified capability machine to
+                  enforce the *-property},
+ author         = {E. Boebert, W},
+ year           = {1984},
+ month          = {September},
+ booktitle      = {Proceedings of the 7th DOD/NBS Computer Security
+                  Conference},
+ www_section    = { Theory },
+ www_html_url   = {http://zesty.ca/capmyths/boebert.html},
+}
+
+@Book{            levy:capsystems,
+ title          = {Capability-{Based} {Computer} {Systems}},
+ publisher      = {Digital Press},
+ author         = {{Henry M. Levy}},
+ year           = {1984},
+ www_section    = { Surveys },
+ www_tags       = { selected },
+ www_important  = {1},
+ www_website_url= {https://homes.cs.washington.edu/~levy/capabook/},
+}
+
+@InProceedings{   rajunas:keykos,
+ author         = {S.A. Rajunas and N. Hardy and A.C. Bomberger and W.S.
+                  Frantz and C.R. Landau},
+ title          = {Security in {K}ey{KOS}},
+ booktitle      = {Proceedings of the 1986 IEEE Sympsium on Security and
+                  Privacy},
+ month          = {April},
+ year           = {1986},
+ www_section    = { Operating Systems },
+}
+
+@Article{         barton:b5000,
+ author         = {R. S. Barton and H. Berce and G. A. Collins and B. A.
+                  Creech and D. M. Dahm and B. A. Dent and V. J. Ford and B.
+                  A. Galler and J. E. S. Hale and E. A. Hauck and J. T.
+                  Hootman and P. D. King and N. L. Kreuder and W. R. Lonergan
+                  and D. MacDonald and F. B. MacKenzie and C. Oliphint and R.
+                  Pearson and R. F. Rosin and L. D. Turner and R. Waychoff},
+ journal        = {Annals of the History of Computing},
+ title          = {Discussion: The Burroughs {B 5000} in Retrospect},
+ year           = {1987},
+ volume         = {9},
+ number         = {1},
+ pages          = {37--92},
+ doi            = {10.1109/MAHC.1987.10006},
+ issn           = {0164-1239},
+ month          = {January},
+ www_section    = { Hardware },
+}
+
+@PhDThesis{       karger:improvingcap,
+ type           = {Technical {Report}},
+ title          = {Improving {Security} and {Performance} for {Capability}
+                  {Systems}},
+ abstract       = {This dissertation examines two major limitations of
+                  capability systems: an inability to support security
+                  policies that enforce confinement and a reputation for
+                  relatively poor performance when compared with
+                  non-capability systems. The dissertation examines why
+                  conventional capability systems cannot enforce confinement
+                  and proposes a new secure capability architecture, called
+                  SCAP, in which confinement can be enforced. SCAP is based
+                  on the earlier Cambridge Capability System, CAP. The
+                  dissertation shows how a non-discretionary security policy
+                  can be implemented on the new architecture, and how the new
+                  architecture can also be used to improve traceability of
+                  access and revocation of access.
+                  
+                  The dissertation also examines how capability systems are
+                  vulnerable to discretionary Trojan horse attacks and
+                  proposes a defence based on rules built into the
+                  command-language interpreter. System-wide garbage
+                  collection, commonly used in most capability systems, is
+                  examined in the light of the non-discretionary security
+                  policies and found to be fundamentally insecure. The
+                  dissertation proposes alternative approaches to storage
+                  management to provide at least some of the benefits of
+                  system-wide garbage collection, but without the
+                  accompanying security problems. Performance of capability
+                  systems is improved by two ma jor techniques. First, the
+                  doctrine of programming generality is addressed as one ma
+                  jor cause of poor performance. Protection domains should be
+                  allocated only for genuine security reasons, rather than at
+                  every subroutine boundary. Compilers can better enforce
+                  modularity and good programming style without adding the
+                  expense of security enforcement to every subroutine call.
+                  Second, the ideas of reduced instruction set computers
+                  (RISC) can be applied to capability systems to simplify the
+                  operations required. The dissertation identifies a minimum
+                  set of hardware functions needed to obtain good performance
+                  for a capability system. This set is much smaller than
+                  previous research had indicated necessary. A prototype
+                  implementation of some of the capability features is
+                  described. The prototype was implemented on a
+                  re-microprogrammed VAX-11/730 computer. The dissertation
+                  examines the performance and software compatibility
+                  implications of the new capability architecture, both in
+                  the context of conventional computers, such as the VAX, and
+                  in the context of RISC processors},
+ number         = {149},
+ institution    = {University of Cambridge, Computer Laboratory},
+ author         = {{Paul Ashley Karger}},
+ month          = {October},
+ year           = {1988},
+ www_section    = { Theory, Hardware / CAP, Operating Systems },
+ www_pdf_url    = {https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-149.pdf},
+}
+
+@Article{         hardy1988,
+ author         = {Norman Hardy},
+ title          = {The Confused Deputy (or why capabilities might have been
+                  invented)},
+ journal        = {{ACM SIGOPS} Operating Systems Review},
+ volume         = {22},
+ number         = {4},
+ month          = {October},
+ year           = {1988},
+ www_section    = { Theory },
+ www_tags       = { selected },
+}
+
+@Article{         carter:mmachine94,
+ author         = {Carter, Nicholas P. and Keckler, Stephen W. and Dally,
+                  William J.},
+ title          = {Hardware Support for Fast Capability-based Addressing},
+ journal        = {SIGPLAN Not},
+ volume         = {29},
+ number         = {11},
+ month          = {November},
+ year           = {1994},
+ issn           = {0362-1340},
+ pages          = {319--327},
+ doi            = {10.1145/195470.195579},
+ publisher      = {ACM},
+ address        = {New York, NY, USA},
+ www_section    = { Hardware },
+ www_pdf_url    = {https://www.cs.utexas.edu/users/skeckler/pubs/asplos94.pdf},
+}
+
+@InProceedings{   shapiro:eros99,
+ address        = {New York, NY, USA},
+ series         = {{SOSP} '99},
+ title          = {{EROS}: {A} {Fast} {Capability} {System}},
+ isbn           = {978-1-58113-140-6},
+ shorttitle     = {{EROS}},
+ doi            = {10.1145/319151.319163},
+ abstract       = {EROS is a capability-based operating system for commodity
+                  processors which uses a single level storage model. The
+                  single level store's persistence is transparent to
+                  applications. The performance consequences of support for
+                  transparent persistence and capability-based architectures
+                  are generally believed to be negative. Surprisingly, the
+                  basic operations of EROS (such as IPC) are generally
+                  comparable in cost to similar operations in conventional
+                  systems. This is demonstrated with a set of microbenchmark
+                  measurements of semantically similar operations in
+                  Linux.The EROS system achieves its performance by coupling
+                  well-chosen abstract objects with caching techniques for
+                  those objects. The objects (processes, nodes, and pages)
+                  are well-supported by conventional hardware, reducing the
+                  overhead of capabilities. Software-managed caching
+                  techniques for these objects reduce the cost of
+                  persistence. The resulting performance suggests that
+                  composing protected subsystems may be less costly than
+                  commonly believed},
+ booktitle      = {Proceedings of the {Seventeenth} {ACM} {Symposium} on
+                  {Operating} {Systems} {Principles}},
+ publisher      = {ACM},
+ author         = {Shapiro, Jonathan S. and Smith, Jonathan M. and Farber,
+                  David J.},
+ year           = {1999},
+ pages          = {170--185},
+ www_section    = { Operating Systems / EROS },
+}
+
+@Article{         shapiro:eros02,
+ author         = {J.S. Shapiro and N. Hardy},
+ journal        = {IEEE Software},
+ title          = {{EROS:} A Principle-Driven Operating System from the
+                  Ground Up},
+ year           = {2002},
+ month          = {January},
+ volume         = {19},
+ number         = {1},
+ pages          = {26--33},
+ www_section    = { Operating Systems / EROS },
+}
+
+@TechReport{      miller:capmyths,
+ title          = {Capability {Myths} {Demolished}},
+ abstract       = {We address three common misconceptions about
+                  capability-based systems: the Equivalence Myth (access
+                  control list systems and capability systems are formally
+                  equivalent), the Confinement Myth (capability systems
+                  cannot enforce confinement), and the Irrevocability Myth
+                  (capability-based access cannot be revoked). The
+                  Equivalence Myth obscures the benefits of capabilities as
+                  compared to access control lists, while the Confinement
+                  Myth and the Irrevocability Myth lead people to see
+                  problems with capabilities that do not actually exist},
+ language       = {en},
+ author         = {Miller, Mark S and Yee, Ka-Ping and Shapiro, Jonathan},
+ year           = {2003},
+ institution    = { Johns Hopkins University },
+ www_section    = { Theory },
+ www_pdf_url    = {http://srl.cs.jhu.edu/pubs/SRL2003-02.pdf},
+ www_tags       = { selected },
+}
+
+@InProceedings{   miller:paradigmregained,
+ address        = {Berlin, Heidelberg},
+ title          = {Paradigm {Regained}: {Abstraction} {Mechanisms} for
+                  {Access} {Control}},
+ isbn           = {978-3-540-40965-6},
+ abstract       = {Access control systems must be evaluated in part on how
+                  well they enable one to distribute the access rights needed
+                  for cooperation, while simultaneously limiting the
+                  propagation of rights which would create vulnerabilities.
+                  Analysis to date implicitly assumes access is controlled
+                  only by manipulating a system's protection state -- the
+                  arrangement of the access graph. Because of the limitations
+                  of this analysis, capability systems have been "proven"
+                  unable to enforce some basic policies: revocation,
+                  confinement, and the *-properties (explained in the text)},
+ booktitle      = {Proceedings of Advances in {Computing} {Science} --
+                  {ASIAN} 2003},
+ publisher      = {Springer Berlin Heidelberg},
+ author         = {Miller, Mark S. and Shapiro, Jonathan S.},
+ editor         = {Vijay A. Saraswat},
+ year           = {2003},
+ pages          = {224--242},
+ www_section    = { Theory },
+ www_website_url= {http://www.erights.org/talks/asian03/},
+ www_pdf_url    = {http://www.erights.org/talks/asian03/paradigm-revised.pdf},
+ www_tags       = { selected },
+}
+
+@InProceedings{   shapiro:towardsverified,
+ author         = {Jonathan Shapiro and Michael Scott Doerrie and Eric
+                  Northup and Mark Miller},
+ title          = {Towards a verified, general-purpose operating system
+                  kernel},
+ booktitle      = {Proceedings of the NICTA Invitational Workshop on
+                  Operating System Verification},
+ year           = {2004},
+ pages          = {1--19},
+ www_section    = { Operating Systems },
+ www_pdf_url    = {http://www.cs.jhu.edu/~swaroop/osverify-2004.pdf},
+}
+
+@TechReport{      shapiro:coyotosspec,
+ author         = {Jonathan S. Shapiro and Jonathan W. Adams},
+ title          = {Coyotos Microkernel Specification},
+ subtitle       = {Version 0.6+},
+ year           = {2007},
+ month          = {September},
+ institution    = { Johns Hopkins University },
+ www_section    = { Operating Systems },
+ www_html_url   = {https://web.archive.org/web/20160904092954/http://www.coyotos.org:80/docs/ukernel/spec.html},
+}
+
+@InProceedings{   mettler:joee,
+ author         = {Mettler, Adrian and Wagner, David},
+ title          = {{Class properties for security review in an
+                  object-capability subset of Java}},
+ booktitle      = {Proceedings of the 5th ACM SIGPLAN Workshop on Programming
+                  Languages and Analysis for Security '10},
+ year           = {2010},
+ isbn           = {978-1-60558-827-8},
+ pages          = {1--7},
+ location       = {Toronto, Canada},
+ doi            = {10.1145/1814217.1814224},
+ publisher      = {ACM},
+ address        = {New York, NY, USA},
+ www_section    = { Programming Languages },
+}
+
+@InProceedings{   neumann:caprevisit,
+ author         = {Peter G. Neumann and Robert N. M. Watson},
+ title          = {Capabilities Revisited: A Holistic Approach to
+                  Bottom-to-Top Assurance of Trustworthy Systems},
+ booktitle      = {Proceedings of the Fourth Layered Assurance Workshop},
+ organization   = {U.S. Air Force Cryptographic Modernization Office and
+                  AFRL},
+ address        = {Austin, Texas},
+ year           = {2010},
+ month          = {December},
+ www_pdf_url    = {http://www.csl.sri.com/neumann/law10.pdf},
+ www_section    = { Hardware / CHERI, Theory },
+}
+
+@InProceedings{   watson:capsicum,
+ author         = {Robert N.~M. Watson and J. Anderson and B. Laurie and K.
+                  Kennaway},
+ title          = {Capsicum: {P}ractical capabilities for {U}nix},
+ booktitle      = {Proceedings of the 19th USENIX Security Symposium},
+ publisher      = {USENIX},
+ month          = {August},
+ year           = {2010},
+ www_section    = { Operating Systems },
+}
+
+@InProceedings{   drossopoulou:cappolicies,
+ address        = {New York, NY, USA},
+ series         = {{FTfJP} '13},
+ title          = {The {Need} for {Capability} {Policies}},
+ isbn           = {978-1-4503-2042-9},
+ doi            = {10.1145/2489804.2489811},
+ abstract       = {The object-capability model is one of the industry
+                  standards adopted for the implementation of security
+                  policies for web-based software. Object-capabilities in
+                  various forms are supported by programming languages such
+                  as E, Joe-E, Newspeak, Grace, and the newer versions of
+                  Javascript. Unfortunately, code written using capabilities
+                  tends to concentrate on the low-level mechanism rather than
+                  the high-level policy. In this position paper, we argue
+                  that current specification methodologies cannot adequately
+                  capture all aspects of the capability policies required to
+                  support object-capability systems. We outline informally
+                  the features that such security policies should support,
+                  and we demonstrate (also informally) how we can reason that
+                  examples satisfy the capability policies},
+ booktitle      = {Proceedings of the 15th {Workshop} on {Formal}
+                  {Techniques} for {Java}-like {Programs}},
+ publisher      = {ACM},
+ author         = {Drossopoulou, Sophia and Noble, James},
+ year           = {2013},
+ keywords       = {security, Java, Grace, JavaScript, object-capability
+                  security},
+ pages          = {6:1--6:7},
+ www_section    = { Theory },
+}
+
+@InProceedings{   chisnall:cpdp11,
+ author         = {David Chisnall and Colin Rothwell and Brooks Davis and
+                  Robert Watson and Jonathan Woodruff and Simon Moore and
+                  Peter G. Neumann and Michael Roe},
+ title          = {Beyond the {PDP}-11: Architectural support for a
+                  memory-safe C abstract machine},
+ booktitle      = {Proceedings of the Fifteenth Edition of ASPLOS on
+                  Architectural Support for Programming Languages and
+                  Operating Systems},
+ series         = {ASPLOS XX},
+ year           = {2014},
+ location       = {Istanbul, Turkey},
+ publisher      = {ACM},
+ address        = {New York, NY, USA},
+ keywords       = {C, memory safety, memory models, code generation},
+ www_section    = { Hardware / CHERI },
+ www_pdf_url    = {https://www.cl.cam.ac.uk/~dc552/papers/asplos15-memory-safe-c.pdf},
+}
+
+@PhDThesis{       doerrie:confidence,
+ title          = {Confidence in {Confinement}: {An} {Axiom}-free,
+                  {Mechanized} {Verification} of {Confinement} in
+                  {Capability}-based {Systems}},
+ shorttitle     = {Confidence in {Confinement}},
+ author         = {Doerrie, M. Scott},
+ year           = {2015},
+ www_section    = { Theory },
+ www_pdf_url    = {http://www.doerrie.us/assets/doerrie-dissertation-jhu.pdf},
+}
+
+@TechReport{      ucam-cl-tr-891,
+ author         = {Watson, Robert N. M. and Neumann, Peter G. and Woodruff,
+                  Jonathan and Roe, Michael and Anderson, Jonathan and
+                  Chisnall, David and Davis, Brooks and Joannou, Alexandre
+                  and Laurie, Ben and Moore, Simon W. and Murdoch, Steven J.
+                  and Norton, Robert and Son, Stacey and Xia, Hongyan},
+ title          = {{Capability Hardware Enhanced RISC Instructions: CHERI
+                  Instruction-Set Architecture (Version 5)}},
+ year           = {2016},
+ month          = { June },
+ institution    = {University of Cambridge, Computer Laboratory},
+ number         = {UCAM-CL-TR-891},
+ www_section    = { Hardware / CHERI },
+ www_pdf_url    = {http://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-891.pdf},
+}
+
+@TechReport{      watson:cheriisav6,
+ title          = {Capability {Hardware} {Enhanced} {RISC} {Instructions}:
+                  {CHERI} {Instruction}-{Set} {Architecture} ({Version} 6)},
+ author         = {Watson, Robert N. M. and Neumann, Peter G. and Woodruff,
+                  Jonathan and Roe, Michael and Anderson, Jonathan and
+                  Baldwin, John and Chisnall, David and Davis, Brooks and
+                  Joannou, Alexandre and Laurie, Ben and Moore, Simon W. and
+                  Murdoch, Steven J. and Norton, Robert and Son, Stacey and
+                  Xia, Hongyan},
+ month          = { April },
+ year           = {2017},
+ institution    = {University of Cambridge, Computer Laboratory},
+ number         = {UCAM-CL-TR-907},
+ www_section    = { Hardware / CHERI },
+ www_pdf_url    = {http://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-907.pdf},
+}
+
+@TechReport{      watson:cheriisav7,
+ author         = {Watson, Robert N. M. and Neumann, Peter G. and Woodruff,
+                  Jonathan and Roe, Michael and Almatary, Hesham and
+                  Anderson, Jonathan and Baldwin, John and Chisnall, David
+                  and Davis, Brooks and Filardo, Nathaniel Wesley and
+                  Joannou, Alexandre and Laurie, Ben and Moore, Simon W. and
+                  Murdoch, Steven J. and Nienhuis, Kyndylan and Norton,
+                  Robert and Richardson, Alex and Rugg, Peter and Sewell,
+                  Peter and Son, Stacey and Xia, Hongyan},
+ title          = {{Capability Hardware Enhanced RISC Instructions: CHERI
+                  Instruction-Set Architecture (Version 7)}},
+ year           = {2018},
+ month          = {October},
+ url            = {https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-927.pdf},
+ institution    = {University of Cambridge, Computer Laboratory},
+ number         = {UCAM-CL-TR-927},
+ www_section    = { Hardware / CHERI },
+ www_pdf_url    = {http://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-907.pdf},
+ www_tags       = { selected },
+}
+
+@InProceedings{   hille:semperos,
+ author         = {Matthias Hille and Nils Asmussen and Pramod Bhatotia and
+                  Hermann H{\"a}rtig},
+ title          = {SemperOS: A Distributed Capability System},
+ booktitle      = {Proceedings of 2019 {USENIX} Annual Technical Conference
+                  ({USENIX} {ATC} 19)},
+ year           = {2019},
+ isbn           = {978-1-939133-03-8},
+ address        = {Renton, WA},
+ pages          = {709--722},
+ url            = {https://www.usenix.org/conference/atc19/presentation/hille},
+ publisher      = {{USENIX} Association},
+ month          = {July},
+ abstract       = {Capabilities provide an efficient and secure mechanism for
+                  fine-grained resource management and protection. However,
+                  as the modern hardware architectures continue to evolve
+                  with large numbers of non-coherent and heterogeneous cores,
+                  we focus on the following research question: can capability
+                  systems scale to modern hardware architectures? In this
+                  work, we present a scalable capability system to drive
+                  future systems with many non-coherent heterogeneous cores.
+                  More specifically, we have designed a distributed
+                  capability system based on a HW/SW co-designed capability
+                  system. We analyzed the pitfalls of distributed capability
+                  operations running concurrently and built the protocols in
+                  accordance with the insights. We have incorporated these
+                  distributed capability management protocols in a new
+                  microkernel-based OS called SemperOS. Our OS operates the
+                  system by means of multiple microkernels, which employ
+                  distributed capabilities to provide an efficient and secure
+                  mechanism for fine-grained access to system resources. In
+                  the evaluation we investigated the scalability of our
+                  algorithms and run applications (Nginx, LevelDB, SQLite,
+                  PostMark, etc.), which are heavily dependent on the OS
+                  services of SemperOS. The results indicate that there is no
+                  inherent scalability limitation for capability systems. Our
+                  evaluation shows that we achieve a parallel efficiency of
+                  70\% to 78\% when examining a system with 576 cores
+                  executing 512 application instances while using 11\% of the
+                  system's cores for OS services},
+ www_section    = { Operating Systems },
+ www_pdf_url    = { https://www.usenix.org/system/files/atc19-hille.pdf },
+}
+
+@InCollection{    watson2017:cheri-deployability,
+ author         = {Robert N. M. Watson and Peter G Neumann and Simon W.
+                  Moore},
+ title          = {{Balancing Disruption and Deployability in the CHERI
+                  Instruction-Set Architecture (ISA)}},
+ editor         = {H. Shrobe and D. L. Shrier and A. Pentland},
+ booktitle      = {New Solutions for Cybersecurity},
+ publisher      = {MIT Press/Connection Science},
+ year           = {2018},
+ chapter        = {5},
+ www_section    = { Hardware / CHERI },
+ www_pdf_url    = {
+                  https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/2017mit-cybersecurity-cheri-web.pdf
+                  },
+}
+
+@InProceedings{   davis2019:cheriabi,
+ author         = {Brooks Davis and Robert N. M. Watson and Alexander
+                  Richardson and Peter Neumann and Simon Moore and John
+                  Baldwin and David Chisnall and James Clarke and Nathaniel
+                  Wesley Filardo and Khilan Gudka and Alexandre Joannou and
+                  Ben Laurie and A. Theodore Markettos and Ed Maste and
+                  Alfredo Mazzinghi and Edward Tomasz Napierala and Robert
+                  Norton and Michael Roe and Peter Sewell and Stacey Son and
+                  Jonathan Woodruff},
+ title          = {{CheriABI}: Enforcing Valid Pointer Provenance and
+                  Minimizing Pointer Privilege in the {POSIX} {C} Run-time
+                  Environment},
+ booktitle      = {Proceedings of the 24nd ACM International Conference on
+                  Architectural Support for Programming Languages and
+                  Operating Systems (ASPLOS 2019)},
+ month          = {April},
+ year           = {2019},
+ www_section    = { Operating Systems },
+ www_pdf_url    = {
+                  https://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201904-asplos-cheriabi.pdf
+                  },
+}
+
+@Article{         woodruff2019:chericoncentrate,
+ author         = {Woodruff, Jonathan and Joannou, Alexandre and Xia, Hongyan
+                  and Fox, Anthony and Norton, Robert and Bauereiss, Thomas
+                  and Chisnall, David and Davis, Brooks and Gudka, Khilan and
+                  Filardo, Nathaniel W. and Markettos, A. Theodore and Roe,
+                  Michael and Neumann, Peter G. and Watson, Robert N. M. and
+                  Moore, Simon W.},
+ title          = {{CHERI} Concentrate: Practical Compressed Capabilities},
+ journal        = {IEEE Transactions on Computers},
+ year           = {2019},
+ publisher      = {IEEE},
+ doi            = {10.1109/TC.2019.2914037},
+ www_section    = { Theory, Hardware / CHERI },
+}
+
+@Article{         skorstengaard:stktokens,
+ author         = {Skorstengaard, Lau and Devriese, Dominique and Birkedal,
+                  Lars},
+ title          = {{StkTokens}: Enforcing Well-bracketed Control Flow and
+                  Stack Encapsulation using Linear Capabilities},
+ journal        = {Proc. ACM Programming Languages},
+ volume         = {3},
+ number         = {POPL},
+ month          = {January},
+ year           = {2019},
+ publisher      = {ACM},
+ address        = {New York, NY, USA},
+ www_section    = { Theory },
+}
