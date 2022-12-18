@@ -1,15 +1,14 @@
 
-%
-%
-% Magic fields:
-%
-%     www_tags -- used to control which page groups the paper appears in.
-%        This is a space-separated list.
-%     www_section -- the topic used under 'topics.html'
-%     www_{ps|pdf|ps_gz|txt|html|abstract}_url -- link for text/abstract of
-%          an entry.
-%     www_important -- set for important entries
-%     www_remarks -- annotation for an entry
+@COMMENT{
+ Magic fields:
+     www_tags -- used to control which page groups the paper appears in.
+        This is a space-separated list.
+     www_section -- the topic used under 'topics.html'
+     www_{ps|pdf|ps_gz|txt|html|abstract}_url -- link for text/abstract of
+          an entry.
+     www_important -- set for important entries
+     www_remarks -- annotation for an entry
+}
 @Article{         dennis:multiprogram,
  author         = {Dennis, Jack B. and Van Horn, Earl C.},
  title          = {Programming Semantics for Multiprogrammed Computations},
@@ -21,9 +20,21 @@
  issn           = {0001-0782},
  doi            = {10.1145/365230.365252},
  journal        = {Commun. ACM},
- month          = { March },
+ month          = {3},
  pages          = {143--155},
  www_section    = { Theory },
+}
+
+@InProceedings{   lampson69,
+ author         = {B.W. Lampson},
+ title          = {Dynamic Protection Structures},
+ booktitle      = {Proceedings of the November 18-20, 1969, fall joint
+                  computer conference; AFIPS '69 (Fall)},
+ month          = {11},
+ year           = {1969},
+ doi            = {10.1145/1478559.1478563},
+ www_pdf_url    = {http://bwlampson.site/06-DynamicProtect/06-DynamicProtect.pdf},
+ www_section    = {Theory},
 }
 
 @InProceedings{   lampson71,
@@ -31,7 +42,7 @@
  title          = {Protection},
  booktitle      = {Proceedings of the Fifth Princeton Symposium on Info. Sci.
                   and Systems},
- month          = {March},
+ month          = {3},
  year           = {1971},
  note           = {Reprinted in ACM Operating Systems Review, Vol. 8 (1),
                   January 1974},
@@ -64,7 +75,7 @@
  language       = {en},
  school         = {Carnegie Mellon University},
  author         = {Jones, Anita Katherine},
- month          = {June},
+ month          = {6},
  year           = {1973},
  www_section    = { Theory },
  www_tags       = { selected },
@@ -90,7 +101,7 @@
  journal        = {Communications of the ACM},
  volume         = {16},
  number         = {10},
- month          = {October},
+ month          = {10},
  year           = {1973},
  pages          = {613--615},
  www_section    = { Theory },
@@ -125,7 +136,7 @@
 }
 
 @Article{         wulf:hydra,
- author         = {Wulf, W. and Cohen, E. and Corwin, W. and Jones, A. and
+ author         = {Wulf, W. and Cohen, E. and Corwin, W. and Anita Jones and
                   Levin, R. and Pierson, C. and Pollack, F.},
  title          = {{HYDRA: the kernel of a multiprocessor operating system}},
  journal        = {Communications of the ACM},
@@ -142,7 +153,7 @@
 
 @InProceedings{   jones74,
  key            = {Jones},
- author         = {A.K. Jones and W.A. Wulf},
+ author         = {Anita Katherine Jones and William A. Wulf},
  title          = {Towards the Design of Secure Systems},
  booktitle      = {Proceedings of the International Workshop on Protection in
                   Operating Systems},
@@ -150,7 +161,7 @@
  address        = {Rocquencourt, Le Chesnay, France},
  year           = {1974},
  pages          = {121--135},
- month          = {August},
+ month          = {8},
  www_section    = { Theory },
 }
 
@@ -198,6 +209,28 @@
  www_section    = { Operating Systems / HYDRA },
 }
 
+@Article{         jones:towardsdesignsecure,
+ author         = {Jones, Anita K. and Wulf, William A.},
+ title          = {Towards the design of secure systems},
+ journal        = {Software: Practice and Experience},
+ volume         = {5},
+ number         = {4},
+ keywords       = {Protection, Security policy, HYDRA, Capability, Operating
+                  system design},
+ doi            = {https://doi.org/10.1002/spe.4380050403},
+ abstract       = {Abstract Within a programmed system, we may distinguish
+                  between different kinds of information in order to control
+                  the use of each kind by separate security policies, where
+                  each policy is tailored to the sensitivity and desired
+                  dissemination of that one kind of information. This paper
+                  analyses the implications of implementing security policies
+                  and describes mechanisms which can be used as the basis for
+                  constructing operating systems with the desired security
+                  attributes},
+ year           = {1975},
+ www_section    = {Theory},
+}
+
 @TechReport{      neumann:psos75,
  author         = {P.G. Neumann and L. Robinson and K.N. Levitt and R.S.
                   Boyer and A.R. Saxena},
@@ -205,7 +238,7 @@
  institution    = {Computer Science Laboratory SRI International, Menlo Park,
                   California},
  year           = {1975},
- month          = {June},
+ month          = {6},
  www_section    = { Operating Systems / PSOS },
 }
 
@@ -216,8 +249,24 @@
  number         = {ESD-TR-75-306},
  institution    = {The Mitre Corporation},
  address        = {Bedford, Massachusetts},
- month          = {March},
+ month          = {3},
  year           = {1976},
+ www_section    = { Theory },
+}
+
+@InProceedings{   jones:narrowinggap,
+ author         = {Anita K. Jones},
+ editor         = {Bruce Gilchrist},
+ title          = {The Narrowing Gap Between Language Systems and Operating
+                  Systems},
+ booktitle      = {Proceedings of the 7th Information Processing {IFIP}
+                  Congress},
+ pages          = {869--873},
+ publisher      = {North-Holland},
+ location       = {Toronto, Canada},
+ month          = {8},
+ day            = {8-12},
+ year           = {1977},
  www_section    = { Theory },
 }
 
@@ -229,8 +278,23 @@
  institution    = {Computer Science Laboratory SRI International, Menlo Park,
                   California},
  year           = {1977},
- month          = {February},
+ month          = {2},
  www_section    = { Operating Systems / PSOS },
+}
+
+@InCollection{    jones:objectmodel,
+ author         = {Jones, Anita K.},
+ editor         = {R. Bayer and R. M. Graham and G. Seegm{\"u}ller},
+ title          = {The object model: A conceptual tool for structuring
+                  software},
+ booktitle      = {Operating Systems: An Advanced Course},
+ year           = {1978},
+ publisher      = {Springer Berlin Heidelberg},
+ address        = {Berlin, Heidelberg},
+ pages          = {7--16},
+ isbn           = {978-3-540-35880-0},
+ doi            = {10.1007/3-540-08755-9_2},
+ www_section    = { Theory },
 }
 
 @Book{            denning:cap,
@@ -251,6 +315,29 @@
  www_tags       = { selected },
 }
 
+@InProceedings{   jones:staros,
+ author         = {Jones, Anita K. and Chansler, Robert J. and Durham, Ivor
+                  and Schwans, Karsten and Vegdahl, Steven R.},
+ title          = {{StarOS}, a Multiprocessor Operating System for the
+                  Support of Task Forces},
+ year           = {1979},
+ isbn           = {0897910095},
+ publisher      = {Association for Computing Machinery},
+ address        = {New York, NY, USA},
+ doi            = {10.1145/800215.806579},
+ abstract       = {StarOS is a message-based, object-oriented, multiprocessor
+                  operating system, specifically designed to support task
+                  forces, large collections of concurrently executing
+                  processes that cooperate to accomplish a single purpose.
+                  StarOS has been implemented at Carnegie-Mellon University
+                  for the 50 processor Cm* multi-microprocessor computer},
+ booktitle      = {Proceedings of the Seventh ACM Symposium on Operating
+                  Systems Principles},
+ location       = {Pacific Grove, California, USA},
+ series         = {SOSP '79},
+ www_section    = {Operating Systems},
+}
+
 @InProceedings{   neumann:psos79,
  key            = {Feiertag},
  author         = {R. J. Feiertag and P. G. Neumann},
@@ -265,6 +352,21 @@
  www_tags       = { selected },
 }
 
+@Article{         jones:caparchrevisit,
+ author         = {Jones, Anita K.},
+ title          = {Capability Architecture Revisited},
+ year           = {1980},
+ publisher      = {Association for Computing Machinery},
+ address        = {New York, NY, USA},
+ volume         = {14},
+ number         = {3},
+ issn           = {0163-5980},
+ doi            = {10.1145/850697.850702},
+ journal        = {SIGOPS Operating Systems Review},
+ month          = {7},
+ www_section    = { Theory, Hardware },
+}
+
 @TechReport{      neumann:psos80,
  author         = {P. G. Neumann and R.S. Boyer and R.J. Feiertag and K.N.
                   Levitt and L. Robinson},
@@ -273,7 +375,7 @@
  institution    = {Computer Science Laboratory, SRI International, Menlo
                   Park, California},
  year           = {1980},
- month          = {May},
+ month          = {5},
  note           = {2nd edition, Report CSL-116},
  www_section    = { Operating Systems / PSOS },
 }
@@ -295,7 +397,7 @@
  journal        = {SIGARCH Comput. Archit. News},
  volume         = {10},
  number         = {4},
- month          = {June},
+ month          = {6},
  year           = {1982},
  issn           = {0163-5964},
  pages          = {3--10},
@@ -310,11 +412,38 @@
                   enforce the *-property},
  author         = {E. Boebert, W},
  year           = {1984},
- month          = {September},
+ month          = {9},
  booktitle      = {Proceedings of the 7th DOD/NBS Computer Security
                   Conference},
  www_section    = { Theory },
  www_html_url   = {http://zesty.ca/capmyths/boebert.html},
+}
+
+@COMMENT{
+ I am unable to find this one. :(
+}
+@Article{         jones:flexdevmulticomp,
+ title          = {Flexible Software Development for Multiple Computer
+                  Systems},
+ author         = {Anita K. Jones and Karsten Schwan},
+ journal      = {IEEE Transactions on Software Engineering},
+ year           = {1968},
+ month          = {3},
+ www_section    = { Theory },
+}
+
+@COMMENT{
+ I am unable to find this one. :(
+}
+@InProceedings{   jones:specifyresourceconcurrent,
+ title          = {The Specification of Resource Allocation for a Concurrent
+                  Program},
+ author         = {Anita K. Jones and Karsten Schwan},
+ journal        = {IEEE Software},
+ booktitle={}
+ month          = {5},
+ year           = {1986},
+ www_section    = { Theory },
 }
 
 @Book{            levy:capsystems,
@@ -326,6 +455,10 @@
  www_tags       = { selected },
  www_important  = {1},
  www_website_url= {https://homes.cs.washington.edu/~levy/capabook/},
+ www_remarks    = {Levy reviews systems up through the mid-1980s, including
+                  the Cambridge CAP, HYDRA, StarOS, IBM's System/38, and
+                  Intel's iAPX 432. The book is out of print but the website
+                  hosts PDF copies of each chapter.},
 }
 
 @InProceedings{   rajunas:keykos,
@@ -334,7 +467,7 @@
  title          = {Security in {K}ey{KOS}},
  booktitle      = {Proceedings of the 1986 IEEE Sympsium on Security and
                   Privacy},
- month          = {April},
+ month          = {4},
  year           = {1986},
  www_section    = { Operating Systems },
 }
@@ -354,7 +487,7 @@
  pages          = {37--92},
  doi            = {10.1109/MAHC.1987.10006},
  issn           = {0164-1239},
- month          = {January},
+ month          = {1},
  www_section    = { Hardware },
 }
 
@@ -409,8 +542,8 @@
                   in the context of RISC processors},
  number         = {149},
  institution    = {University of Cambridge, Computer Laboratory},
- author         = {{Paul Ashley Karger}},
- month          = {October},
+ author         = {Paul Ashley Karger},
+ month          = {10},
  year           = {1988},
  www_section    = { Theory, Hardware / CAP, Operating Systems },
  www_pdf_url    = {https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-149.pdf},
@@ -423,7 +556,7 @@
  journal        = {{ACM SIGOPS} Operating Systems Review},
  volume         = {22},
  number         = {4},
- month          = {October},
+ month          = {10},
  year           = {1988},
  www_section    = { Theory },
  www_tags       = { selected },
@@ -436,7 +569,7 @@
  journal        = {SIGPLAN Not},
  volume         = {29},
  number         = {11},
- month          = {November},
+ month          = {11},
  year           = {1994},
  issn           = {0362-1340},
  pages          = {319--327},
@@ -489,7 +622,7 @@
  title          = {{EROS:} A Principle-Driven Operating System from the
                   Ground Up},
  year           = {2002},
- month          = {January},
+ month          = {1},
  volume         = {19},
  number         = {1},
  pages          = {26--33},
@@ -563,7 +696,7 @@
  title          = {Coyotos Microkernel Specification},
  subtitle       = {Version 0.6+},
  year           = {2007},
- month          = {September},
+ month          = {9},
  institution    = { Johns Hopkins University },
  www_section    = { Operating Systems },
  www_html_url   = {https://web.archive.org/web/20160904092954/http://www.coyotos.org:80/docs/ukernel/spec.html},
@@ -594,7 +727,7 @@
                   AFRL},
  address        = {Austin, Texas},
  year           = {2010},
- month          = {December},
+ month          = {12},
  www_pdf_url    = {http://www.csl.sri.com/neumann/law10.pdf},
  www_section    = { Hardware / CHERI, Theory },
 }
@@ -605,7 +738,7 @@
  title          = {Capsicum: {P}ractical capabilities for {U}nix},
  booktitle      = {Proceedings of the 19th USENIX Security Symposium},
  publisher      = {USENIX},
- month          = {August},
+ month          = {8},
  year           = {2010},
  www_section    = { Operating Systems },
 }
@@ -680,7 +813,7 @@
  title          = {{Capability Hardware Enhanced RISC Instructions: CHERI
                   Instruction-Set Architecture (Version 5)}},
  year           = {2016},
- month          = { June },
+ month          = {6},
  institution    = {University of Cambridge, Computer Laboratory},
  number         = {UCAM-CL-TR-891},
  www_section    = { Hardware / CHERI },
@@ -696,7 +829,7 @@
                   Joannou, Alexandre and Laurie, Ben and Moore, Simon W. and
                   Murdoch, Steven J. and Norton, Robert and Son, Stacey and
                   Xia, Hongyan},
- month          = { April },
+ month          = {4},
  year           = {2017},
  institution    = {University of Cambridge, Computer Laboratory},
  number         = {UCAM-CL-TR-907},
@@ -716,7 +849,7 @@
  title          = {{Capability Hardware Enhanced RISC Instructions: CHERI
                   Instruction-Set Architecture (Version 7)}},
  year           = {2018},
- month          = {October},
+ month          = {10},
  url            = {https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-927.pdf},
  institution    = {University of Cambridge, Computer Laboratory},
  number         = {UCAM-CL-TR-927},
@@ -737,7 +870,7 @@
  pages          = {709--722},
  url            = {https://www.usenix.org/conference/atc19/presentation/hille},
  publisher      = {{USENIX} Association},
- month          = {July},
+ month          = {7},
  abstract       = {Capabilities provide an efficient and secure mechanism for
                   fine-grained resource management and protection. However,
                   as the modern hardware architectures continue to evolve
@@ -800,7 +933,7 @@
  booktitle      = {Proceedings of the 24nd ACM International Conference on
                   Architectural Support for Programming Languages and
                   Operating Systems (ASPLOS 2019)},
- month          = {April},
+ month          = {4},
  year           = {2019},
  www_section    = { Operating Systems },
  www_pdf_url    = {
@@ -831,7 +964,7 @@
  journal        = {Proc. ACM Programming Languages},
  volume         = {3},
  number         = {POPL},
- month          = {January},
+ month          = {1},
  year           = {2019},
  publisher      = {ACM},
  address        = {New York, NY, USA},
